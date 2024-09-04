@@ -84,10 +84,10 @@ def download():
     else:
         return "Invalid URL or platform not supported."
 
-if __name__ == '__main__':
-    if not os.path.exists('downloads'):
-        os.makedirs('downloads')
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     if not os.path.exists('downloads'):
+#         os.makedirs('downloads')
+#     app.run(debug=True)
 
 
 
