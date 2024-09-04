@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Video Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icon.jpg">
+</head>
+<body>
+    <div class="container">
+        <h1>Download Instagram Reels or YouTube Videos</h1>
+        <form action="/download" method="POST">
+            <div class="form-group">
+                <label for="url">Enter the URL:</label>
+                <input type="text" id="url" name="url" required>
+            </div>
+            <div class="form-group">
+                <label for="quality">Select Download Quality:</label>
+                <select id="quality" name="quality" required>
+                    <option value="high">High (1080p)</option>
+                    <option value="medium">Medium (720p)</option>
+                    <option value="low">Low (480p)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Download</button>
+        </form>
+    </div>
+</body>
+</html>
